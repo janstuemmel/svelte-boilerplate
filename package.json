@@ -1,0 +1,46 @@
+{
+  "name": "svelte-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "parcel src/index.html"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.svelte$": "jest-transform-svelte",
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect",
+      "<rootDir>/test/setup.js"
+    ],
+    "transformIgnorePatterns": []
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/svelte": "^1.9.1",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-transform-svelte": "^2.1.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.5",
+    "svelte": "^3.16.0",
+    "svelte-routing": "^1.4.0"
+  },
+  "dependencies": {}
+}
